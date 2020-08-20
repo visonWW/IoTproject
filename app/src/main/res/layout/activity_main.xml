@@ -5,39 +5,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:layout_marginTop="70dp"
+    android:gravity="top|center"
     tools:context=".MainActivity">
+
+
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="첫번째 화면입니다."
-        android:textSize="50dp"/>
-
+        android:layout_height="119dp"
+        android:fontFamily="@font/fontstyle"
+        android:textStyle="bold"
+        android:text="My Home"
+        android:textSize="50dp" />
 
     <LinearLayout
 
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
+        android:layout_width="344dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/temp_btn"
-            android:layout_width="wrap_content"
+            android:id="@+id/light_btn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="temp 화면전환"/>
+            android:layout_margin="10dp"
+            android:background="@drawable/button_roundedge"
+            android:fontFamily="@font/fontstyle"
+            android:textStyle="bold"
+            android:text="light 화면전환"
+            android:textColor="#212121" />
 
         <Button
-            android:id="@+id/light_btn"
-            android:layout_width="wrap_content"
+            android:id="@+id/temp_btn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="light 화면전환"/>
+            android:layout_margin="10dp"
+            android:background="@drawable/button_roundedge"
+            android:fontFamily="@font/fontstyle"
+            android:textStyle="bold"
+            android:text="temp 화면전환"
+            android:textColor="#212121" />
 
         <Button
             android:id="@+id/air_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="air 화면전환" />
+            android:layout_margin="10dp"
+            android:background="@drawable/button_roundedge"
+            android:fontFamily="@font/fontstyle"
+            android:textStyle="bold"
+            android:text="air 화면전환"
+            android:textColor="#212121" />
 
 
     </LinearLayout>

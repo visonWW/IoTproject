@@ -23,7 +23,8 @@ public class lightActivity extends AppCompatActivity {
 //    토글변수
     Button addBtn;
     ToggleButton toggleButton;
-    LinearLayout layout;
+    LinearLayout layout1;
+    LinearLayout layout2;
     Context context;
     int count=1;
     EditText editText;
@@ -35,17 +36,18 @@ public class lightActivity extends AppCompatActivity {
         setContentView(R.layout.light);
 
         addBtn = (Button)findViewById(R.id.addBtn);
-        layout = (LinearLayout)findViewById(R.id.layout);
+        layout1 = (LinearLayout)findViewById(R.id.layout1);
+//        layout2 = (LinearLayout)findViewById(R.id.layout2);
         context = this;
 
         addBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0){
                 Button btn = new Button(context);
-                ToggleButton toggleButton = new ToggleButton(context);
+//                ToggleButton toggleButton = new ToggleButton(context);
                 btn.setText("Light" + String.valueOf(count));
-                layout.addView(btn);
-                layout.addView(toggleButton);
+                layout1.addView(btn);
+//                layout2.addView(toggleButton);
                 count++;
 
             }
